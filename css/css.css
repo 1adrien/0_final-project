@@ -1,0 +1,79 @@
+body{
+  background-color: #77D3D1;
+  font-family: 'Verdana', sans-serif;
+}
+
+.main{
+  margin: 0 auto;
+  width: 800px;
+}
+
+h1{
+  font-size: 30px;
+  color: white;
+  opacity: 0.7;
+  padding: 40px 0 40px 0;
+}
+
+.sentence{
+  background-color: white;
+  opacity: 0.5;
+  padding: 10px;
+  height: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+button{
+  padding: 12px;
+  margin-right: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid #31969C;
+  border-radius: 6px;
+  outline:none;
+  color: #31969C; 
+  
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #31969C;
+  color: #fff;
+}
+
+.cooltip{
+  margin-top: 40px;
+  background: linear-gradient(to right,#fce4ed,#ffe8cc);
+  border: 10px solid #77D3D1;
+  padding: 1rem 2rem;
+    border-radius: 16px;
+    position: relative;
+}
+
+.cooltip:before{
+  content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 1px solid #da1b60;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.cooltip:after{
+    content: "Cool tip";
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    top: -16px;
+    left: 1rem;
+    color: black;
+    background: #77D3D1;
+    padding: 0 .5rem;
+    font-size: .6rem;
+    position: absolute;
+    z-index: 1;
+}
