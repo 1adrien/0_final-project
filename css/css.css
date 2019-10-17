@@ -20,8 +20,8 @@ h1 {
 h2 {
   font-size: 14px;
   font-weight: 900;
-  padding-bottom: 12px;
   color: #FFFFFF;
+  letter-spacing: 0.4px;
 }
 
 .flex-this {
@@ -39,6 +39,7 @@ h2 {
 
 .sentence {
   background-color: #FFFFFF;
+  width: 840px;
   padding: 10px 20px;
   border-radius: 40px;
   margin-top: 40px;
@@ -57,54 +58,69 @@ h2 {
   font-style: italic;
 }
 
-button {
+
+button, label {
   margin-right: 10px;
   width: 120px;
   padding: 12px 0;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
   border-radius: 6px;
   border: 0;
+  outline: 0;
   border-bottom: 2px solid #9E0673;
   background-color: #FF33A1;
   color: white;
   cursor: pointer;
+  display: inline-block;
 }
 
-button:disabled,
-button[disabled]{
+button:hover, label:hover{
+  background-color: #D6147D;
+}
+
+.reset{
+  margin-top: 40px;
+  margin-left: 10px;
+  background-color: #AB5BDF;
+  padding: 14px;
+  border-radius: 40px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+
+}
+
+.reset:hover{
+  background-color: #9312E7;
+}
+
+.disabled{
   opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
-.toggle {
-  margin-right: 10px;
-  width: 120px;
-  padding: 12px 0;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: 6px;
-  border: 0;
-  border-bottom: 2px solid #9E0673;
-  background-color: #FF33A1;
-  color: white;
-  cursor: pointer;
-}
-
-
-.toggle:last-child {
+label:last-child {
   margin-right: 0;
   
 }
 
-
+input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
 
 /* button:active {
   background-color: #31969C;
   color: #fff;
 } */
 .cooltip { /* this is the tip bg */
+  color: #FFF;
   margin-top: 40px;
   background: linear-gradient(to right, #4DCDFF, #AB5BDF);
   border: 10px solid #9E1BBE;
@@ -126,7 +142,7 @@ button[disabled]{
 }
 
 .cooltip:after { /* this is the "cool tip" */
-  content: "Cool tip";
+  content: "Cool tip!";
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: 900;

@@ -31,49 +31,54 @@
 
         <div class="button-container">
           <h2>add a:</h2>
-          <button type="button" class="add-location">location</button>
-          <button type="button" class="add-time">time</button>
+          <button type="button" class="add-location" attr>location</button>
+          <button type="button" class="add-time" attr>time</button>
 
         </div>
         
         <div class="button-container">
           <h2>make it:</h2>
 
-          <label>
-            <input type=“checkbox” class="add-make-it toggle past" value="past" />
+          <label class="ten add-make-it" attr>
+            <span>Past</span>
+            <input type="checkbox" class="toggle tense"/>
           </label>
 
-          <label>
-            <input type=“checkbox” class="add-make-it toggle casual" value="casual" />
+          <label class="ton add-make-it" attr>
+            <span>Casual</span>
+            <input type="checkbox" class="toggle tone"/>
           </label>
         </div>
         
       </div>
+      <div class="flex-this">
+        <div class="sentence">
+        
+          <span class="time"></span>
 
-      <div class="sentence">
+          <span class="subject"></span>
+          <span class="subject-particle"></span>
+
+          <span class="location"></span>
+          <span class="location-particle"></span>
+
+          <span class="object"></span>
+          <span class="object-particle"></span>
+
+          <span class="verb"></span>
       
-
-        <span class="topic"></span>
-
-        <span class="subject"></span>
-        <span class="subject-particle"></span>
-
-        <span class="location"></span>
-        <span class="location-particle"></span>
-
-        <span class="object"></span>
-        <span class="object-particle"></span>
-
-        <span class="verb"></span>
-    
-        <span class="ending-particle"></span>
-
-
+          <span class="ending-particle"></span>
+          
+        </div>
+        <div class="reset">Reset
+        </div>
       </div>
       <div class="english">
+        <span class="eng-time"></span>
         <span class="eng-subject"></span>
         <span class="eng-verb"></span>
         <span class="eng-object"></span>
+        <span class="eng-location"></span>
 
       </div>
 
@@ -81,7 +86,7 @@
 
       <div class="cooltip">
         <p>
-          There is no English language equivalent to the concept of "topics" in Japanese grammar.
+          Japanese basic sentence structure is a SOV (subject object verb) language while English is SVO (subject verb object).
         </p>
       </div>
 
